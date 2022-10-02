@@ -9,8 +9,8 @@ package module01
 func Reverse(word string) string {
 	rev := ""
 
-	for i := range word {
-		rev = string(word[i]) + rev
+	for _, r := range word {
+		rev = string(r) + rev
 	}
 
 	return rev
